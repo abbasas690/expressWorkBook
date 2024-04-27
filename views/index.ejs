@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>home</h1>
+    <p>this is home page</p>
+    <!-- display the data -->
+    <%= name.toUpperCase() %>
+        <%= 2+2 %>
+            <!-- conditional rendering -->
+            <% if(userId===20) { %>
+                <h1>userId : <%= userId %>
+                </h1>
+                <% }else if(userId==1){ %>
+                    <h2>userId is !</h2>
+                    <% }else{ %>
+                        <h2>no userId is match</h2>
+                        <% } %>
+                            <!-- loops in ejs -->
+                            <% for(let i=0;i<10;i++){ %>
+                                <h1>
+                                    <%= i %>
+                                </h1>
+                                <% } %>
+                                    <% const data1=[1,23,32,33,4] %>
+                                        <% for(d of data1){ %>
+                                            <h4>
+                                                <%= d %>
+                                            </h4>
+                                            <% } %>
+                                                <% var d=new Date() %>
+                                                    <%= d %>
+</body>
+
+</html>
